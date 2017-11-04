@@ -1,4 +1,4 @@
-%Funcion miembro
+%Funcion miembro para listas
 
 miembro(X,[X|_]).
 miembro(X,[_|R]):- miembro(X,R).
