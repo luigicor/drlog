@@ -19,17 +19,15 @@ longitud([_|L],R):-longitud(L,R1), R is R1+1.
 agregar(X, L, [X|L]).
 
 %Consulta de Dr.Log
-acontecimiento(1505,['Euclides',traducido,al,latin]).
-acontecimiento(1523,['Chistian','II',huye,de,'Dinamarca']).
 
 consulta:-
-	write(['Que', tiene,  'we ?' ]),
+	write('Que tiene  we ?' ),
 	read(C),
 	agregar(C,[],S),
 	write('Que mas tiene  we ?' ),
 	read(D),
 	agregar(D,S,T),
-	write(['Que', 'mas tiene',  'we ?' ]),
+	write('Algo mas we ?' ),
 	read(E),
 	agregar(E,T,U),
 	write(U).
