@@ -71,13 +71,13 @@ prevencion(varicela,['Evitando contacto con afectados']).
 prevencion(faringitis,['Teniendo buena higiene','Evitando contacto con afectados']).
 prevencion(estres,['Descansando','Disminuyendo la presion']).
 
-tratar(asma,[mascarilla,descanso]).
-tratar(gastritis,[jarabe,descanso]).
-tratar(gripe,[inyeccion,descanso, jarabe]).
-tratar(rinitis,[gotas,descanso]).
-tratar(varicela,[descanso]).
-tratar(faringitis,[antibiotico, descanso]).
-tratar(estres,[descanso]).
+tratar(asma,['aplicar mascarilla','descansar']).
+tratar(gastritis,['tomar jarabe','descansar']).
+tratar(gripe,['aplicar inyeccion','descansar', 'tomar jarabe']).
+tratar(rinitis,['aplicar gotas nasales','descansar']).
+tratar(varicela,['descansar']).
+tratar(faringitis,['tomar antibiotico', 'descansar']).
+tratar(estres,['descansar']).
 trata(X):-tratar(X,L), write(L).
 preve(A):-prevencion(A,L), write(L).
 caus(B):-causas(B,L), write(L).
